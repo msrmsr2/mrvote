@@ -39,6 +39,8 @@ npm run deploy:pages
 - `CODE_SALT` - соль для хэшей одноразовых кодов.
 - `HOME_PASSWORD` - пароль для входа на главную страницу.
 
+После смены `ADMIN_PASSWORD` сделайте новый push в GitHub, чтобы Cloudflare Pages пересобрал проект и подхватил обновлённый secret.
+
 ## D1
 
 Схема лежит в [`schema.sql`](./schema.sql). Для локальной разработки поднимите D1 binding в `wrangler.jsonc` и выполните схему через Wrangler.
